@@ -1,6 +1,6 @@
 {
   "name": "gulp-ngconcat",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The gulp plugin of easy to use concatination for Angular based projects",
   "main": "index.js",
   "scripts": {
