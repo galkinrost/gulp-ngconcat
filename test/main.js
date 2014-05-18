@@ -10,31 +10,6 @@ describe('gulp-ngconcat', function () {
     describe('concat()', function () {
 
         testFiles(concat('expected/first.js'), 'src/first/**/*.js', 'first.js');
-        /* var input;
-
-         input = ['wadup'];
-         testFiles(concat('test.js'), input, 'wadup');
-         testFiles(concat('test.js', {newLine: '\r\n'}), input, 'wadup');
-         testFiles(concat('test.js', {newLine: ''}), input, 'wadup');
-
-         input = ['wadup', 'doe'];
-         testFiles(concat('test.js'), input, 'wadup\ndoe');
-         testFiles(concat('test.js', {newLine: '\r\n'}), input, 'wadup\r\ndoe');
-         testFiles(concat('test.js', {newLine: ''}), input, 'wadupdoe');
-
-         input = ['wadup', 'doe', 'hey'];
-         testFiles(concat('test.js'), input, 'wadup\ndoe\nhey');
-         testFiles(concat('test.js', {newLine: '\r\n'}), input, 'wadup\r\ndoe\r\nhey');
-         testFiles(concat('test.js', {newLine: ''}), input, 'wadupdoehey');
-
-         input = [
-         [65, 66],
-         [67, 68],
-         [69, 70]
-         ];
-         testFiles(concat('test.js'), input, 'AB\nCD\nEF');
-         testFiles(concat('test.js', {newLine: '\r\n'}), input, 'AB\r\nCD\r\nEF');
-         testFiles(concat('test.js', {newLine: ''}), input, 'ABCDEF');*/
 
         function testFiles(stream, pattern, expected) {
             it('should concat one or several files', function (done) {
