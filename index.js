@@ -22,12 +22,11 @@ module.exports = function (fileName, opt) {
         if (!firstFile) firstFile = file;
 
         try {
-            var info = concat.mapSource(file.contents.toString('utf-8'), file.path, file.contents);
+            var info = concat.mapSource(file.contents.toString('utf-8'), file.path);
         } catch (err) {
             self.emit('error', new gutil.PluginError('gulp-ngconcat', err));
         }
 
-        info.filename = file.path;
         info.contents = file.contents;
 
         buffer.push(info);
