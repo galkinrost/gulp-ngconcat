@@ -1,0 +1,33 @@
+{
+  "name": "gulp-ngconcat",
+  "version": "0.0.0",
+  "description": "The gulp plugin of easy to use concatination for Angular based projects",
+  "main": "index.js",
+  "scripts": {
+      "test": "cd test && mocha *.js -R list"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:galkinrost/gulp-ngconcat.git"
+  },
+  "keywords": [
+    "gulp",
+    "concat",
+    "angular"
+  ],
+  "author": "galkinrost@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/galkinrost/gulp-ngconcat/issues"
+  },
+  "dependencies": {
+    "gulp-util": "~2.2.14",
+    "through": "~2.3.4",
+    "ngconcat": "0.0.2"
+  },
+  "devDependencies": {
+    "async": "~0.9.0",
+    "should": "~3.3.1",
+    "glob": "~3.2.9"
+  }
+}
